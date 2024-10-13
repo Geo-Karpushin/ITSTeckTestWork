@@ -3,10 +3,8 @@ package main
 import (
 	"fmt"
 	"os"
+	"run/app"
 	"strconv"
-	"testwork/auth"
-
-	_ "github.com/mattn/go-sqlite3"
 )
 
 func main() {
@@ -21,5 +19,5 @@ func main() {
 		return
 	}
 
-	auth.Init("supersecretkey", os.Args[1])
+	app.Init("supersecretkey", os.Args[1])
 }
